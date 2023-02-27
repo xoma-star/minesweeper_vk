@@ -1,0 +1,11 @@
+.digital-display {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.digital-display > * {
+    width: 14px;
+    height: 24px;
+    background: var(--sprite) var(--left) 0;
+}
