@@ -1,0 +1,22 @@
+.cell {
+    width: 16px;
+    height: 16px;
+    background: var(--sprite);
+}
+.cell-default {
+    background-position: 0px 32px;
+}
+.cell-revealed-empty {
+    background: var(--background);
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+.cell-revealed-bomb {
+    background-position: 53px 32px;
+}
+.cell-revealed-bomb-red {
+    background-position: 36px 32px;
+}
+.cell-revealed-number {
+    background-position: var(--left) 16px;
+}

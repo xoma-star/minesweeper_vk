@@ -1,0 +1,20 @@
+.smile {
+    background-color: var(--background);
+    width: 26px;
+    height: 26px;
+}
+.smiling {
+    background: var(--sprite) -1px 59px;
+}
+.cool {
+    background: var(--sprite) 57px 59px;
+}
+.dead {
+    background: var(--sprite) 30px 59px;
+}
+.scared {
+    background: var(--sprite) 84px 59px;
+}
+.smile:active {
+    background: var(--sprite) 111px 59px;
+}
