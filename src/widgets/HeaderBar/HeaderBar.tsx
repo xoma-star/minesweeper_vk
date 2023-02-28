@@ -21,6 +21,9 @@ const HeaderBar = ({bombsLeft, status, timer, onSmileClick}: props) => {
         case "ended":
             smileState = 'dead'
             break
+        case "won":
+            smileState = 'cool'
+            break
     }
     return (
         <div className={'header-bar bordered pushed'}>

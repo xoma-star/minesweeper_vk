@@ -20,3 +20,12 @@
 .cell-revealed-number {
     background-position: var(--left) 16px;
 }
+.cell-marked-question {
+    background-position: -51px 32px;
+}
+.cell-marked-flag {
+    background-position: -34px 32px;
+}
+.cell-revealed-bomb-cross {
+    background-position: 20px 32px;
+}

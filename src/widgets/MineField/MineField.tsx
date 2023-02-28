@@ -6,14 +6,14 @@ import Cell from "../../common/ui/Cell/Cell";
 interface props {
     cells: CellSchema[],
     onClickStart(): void,
-    onClickEnd(i: number): void
+    onClickEnd(i: number, button: 'left' | 'right'): void
 }
 
 const MineField = ({cells, onClickEnd, onClickStart}: props) => {
     return (
         <div className={'mine-field bordered pushed'}>
             {/*здесь я использовал i в качестве key, т.к. нет операций ведущих к структурным изменениям массива*/}
-            {cells.map((x, i) => <Cell cellData={x} onMouseUp={() => onClickEnd(i)} onMouseDown={onClickStart} key={`c${i}`}/>)}
+            {cells.map((x, i) => <Cell cellData={x} onMouseUp={(s: 'left' | 'right') => onClickEnd(i, s)} onMouseDown={onClickStart} key={`c${i}`}/>)}
         </div>
     );
 };
